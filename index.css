@@ -1,0 +1,318 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    background-color: #1a1d21;
+    font-family: "Roboto Mono", monospace;
+    text-transform: capitalize;
+}
+
+
+
+.container {
+    width: 550px;
+    height: 650px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    background-color: #2d3f50;
+    border: 10px solid #eee;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+
+.container .loginForm {
+    width: 100%;
+    position: relative;
+    background-color: transparent;
+    z-index: 1000;
+}
+
+.container .loginForm form {
+    width: 95%;
+    margin: 30px auto;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    position: relative;
+    background-color: transparent;
+    /* the color above will turn into a transparent */
+}
+
+.container .loginForm form h1 {
+    color: #eee;
+    margin: 40px auto;
+    font-size: 400;
+    font-size: 60px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container .loginForm form label {
+    color: #617183;
+    font-size: 20px;
+    text-align: left;
+    width: 100%;
+    margin-top: 30px;
+}
+
+
+.container .loginForm form input {
+    display: block;
+    width: 100%;
+    border: none;
+    outline: none;
+    color: #fff;
+    background-color: transparent;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    border-bottom: 2px solid #617183;
+}
+
+.btn {
+    margin: 30px;
+    padding: 15px 65px;
+    font-size: 20px;
+    border: none;
+    outline: 0;
+    background-color: #2b93fb;
+    color: #fff;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+a {
+    text-decoration: none;
+    color: #1E62A3;
+}
+
+
+/* animation section  */
+
+.animations {
+    width: 530px;
+    height: 630px;
+    z-index: 2;
+    background-color: transparent;
+    position:relative;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%,-46.4%);
+    -webkit-transform: translate(-50%,-46.4%);
+    -moz-transform: translate(-50%,-46.4%);
+    -ms-transform: translate(-50%,-46.4%);
+    -o-transform: translate(-50%,-46.4%);
+    overflow: hidden;
+}
+
+
+
+.boxs {
+    position: absolute;
+    background-color: #445362;
+    
+}
+
+
+.box-1 {
+    width: 70px;
+    height: 70px;
+    left: -5%;
+    top: 102%;
+    animation: box-1 10s linear infinite;
+    -webkit-animation: box-1 10s linear infinite;
+
+}
+
+@keyframes box-1 {
+    form {
+        top: 102%;
+        left: -10%;
+        transform: rotate(0);
+        -webkit-transform: rotate(0);
+        -moz-transform: rotate(0);
+        -ms-transform: rotate(0);
+        -o-transform: rotate(0);
+    }
+    to {
+        top: -20%;
+        left: 10%;
+        transform: rotate(359deg);
+        -webkit-transform: rotate(359deg);
+        -moz-transform: rotate(359deg);
+        -ms-transform: rotate(359deg);
+        -o-transform: rotate(359deg);
+} 
+}
+
+.box-2 {
+    width: 110px;
+    height: 110px;
+    top: 111%;
+    left: 33%;
+    animation: box-2 9s linear infinite;
+    -webkit-animation: box-2 9s linear infinite;
+}
+
+@keyframes box-2 {
+    form {
+        top: 120%;
+        left: 1%;
+        transform: rotate(0);
+        -webkit-transform: rotate(0);
+        -moz-transform: rotate(0);
+        -ms-transform: rotate(0);
+        -o-transform: rotate(0);
+    }
+    to {
+        top: -20%;
+        left: 60%;
+        transform: rotate(359deg);
+        -webkit-transform: rotate(359deg);
+        -moz-transform: rotate(359deg);
+        -ms-transform: rotate(359deg);
+        -o-transform: rotate(359deg);
+    }
+}
+
+.box-3 {
+    width: 30px;
+    height: 30px;
+    top: 160%;
+    left: 80%;
+    animation: box-3 12s linear infinite;
+    -webkit-animation: box-3 12s linear infinite;
+}
+
+@keyframes box-3 {
+    from {
+        top: 160%;
+        left: 3%;
+        transform: rotate(0);
+        -webkit-transform: rotate(0);
+        -moz-transform: rotate(0);
+        -ms-transform: rotate(0);
+        -o-transform: rotate(0);
+        }
+    to {
+        top: -40%;
+        left: 85%;
+        transform: rotate(359deg);
+        -webkit-transform: rotate(359deg);
+        -moz-transform: rotate(359deg);
+        -ms-transform: rotate(359deg);
+        -o-transform: rotate(359deg);
+}
+}
+
+.box-4 {
+    width: 80px;
+    height: 80px;
+    top: 135%;
+    left: 64%;
+    animation: box-4 9s linear infinite;
+    -webkit-animation: box-4 9s linear infinite;
+}
+
+
+@keyframes box-4 {
+    from {
+        top: 135%;
+        left: -3%;
+        transform: rotate(0);
+        -webkit-transform: rotate(0);
+        -moz-transform: rotate(0);
+        -ms-transform: rotate(0);
+        -o-transform: rotate(0);
+    }
+    to {
+        top: -7%;
+        left: 35%;
+        transform: rotate(359deg);
+        -webkit-transform: rotate(359deg);
+        -moz-transform: rotate(359deg);
+        -ms-transform: rotate(359deg);
+        -o-transform: rotate(359deg);
+}
+}
+
+.box-5 {
+    width: 50px;
+    height: 50px;
+    top: 105%;
+    left: 63%;
+    animation: box-5 10s linear infinite;
+    -webkit-animation: box-5 10s linear infinite;
+}
+
+@keyframes box-5 {
+    from {
+        top: 105%;
+        left: 63%;
+        transform: rotate(0);
+        -webkit-transform: rotate(0);
+        -moz-transform: rotate(0);
+        -ms-transform: rotate(0);
+        -o-transform: rotate(0);
+}
+    to {
+        top: -20%;
+        left: 90%;
+        transform: rotate(359deg);
+        -webkit-transform: rotate(359deg);
+        -moz-transform: rotate(359deg);
+        -ms-transform: rotate(359deg);
+        -o-transform: rotate(359deg);
+}
+}
+
+.box-6 {
+    width: 70px;
+    height: 70px;
+    top: 106%;
+    left: 55%;
+    animation: box-6 7s linear infinite;
+    -webkit-animation: box-6 7s linear infinite;
+}
+
+@keyframes box-6 {
+    from {
+        top: 106%;
+        left: 75%;
+        transform: rotate(0);
+        -webkit-transform: rotate(0);
+        -moz-transform: rotate(0);
+        -ms-transform: rotate(0);
+        -o-transform: rotate(0);
+    }
+    to {
+        top: -15%;
+        left: 105%;
+        transform: rotate(359deg);
+        -webkit-transform: rotate(359deg);
+        -moz-transform: rotate(359deg);
+        -ms-transform: rotate(359deg);
+        -o-transform: rotate(359deg);
+}
+}
